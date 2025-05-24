@@ -43,7 +43,7 @@ void getPrintHeader() {
 
 // product structure
 struct Product {
-    int id;
+    int key;
     string name;
     string category;
     string size;
@@ -103,7 +103,7 @@ public:
 	// function to check if ID exist
     bool isIdExist(int id) const {
         for (int i = 0; i <= topstack; ++i) {
-            if (stack[i].id == id) {
+            if (stack[i].key == id) {
                 return true;
             }
         }
@@ -124,7 +124,7 @@ public:
             Product &p = stack[i];
             
             cout << "| " << left
-              << setw(10) << p.id << " | "
+              << setw(10) << p.key << " | "
               << setw(20) << p.name << " | "
               << setw(15) << p.category << " | "
               << setw(6) << p.size << " | "
@@ -149,7 +149,7 @@ public:
         for (int i = 0; i <= topstack; ++i) {
             Product &p = stack[i];
             file 
-              << p.id       << ","
+              << p.key       << ","
               << p.name     << ","
               << p.category << ","
               << p.size     << ","
@@ -182,7 +182,7 @@ public:
 			
 			// convert to int
             getline(ss, tmp, ',');
-            p.id = stoi(tmp);
+            p.key = stoi(tmp);
             
             getline(ss, p.name, ',');
             getline(ss, p.category, ',');
@@ -211,10 +211,10 @@ public:
             switch (field) {
 			    // id
 			    case  1: 
-					inOrder = stack[index].id >= stack[index-1].id;
+					inOrder = stack[index].key >= stack[index-1].key;
 					break;  // Ascending by id			
 			    case  2: 
-					inOrder = stack[index].id   <= stack[index-1].id;
+					inOrder = stack[index].key   <= stack[index-1].key;
 					break;  // Descending by id
 			
 			    // name
@@ -286,7 +286,7 @@ public:
 	
 	    int pos = 0;
 	    for (int i = lg ; i >= 0; i--) {
-	        if (stack[pos].id == key_to_search)
+	        if (stack[pos].key == key_to_search)
 	            return pos;
 	
 	        // Incrementally construct the
@@ -295,12 +295,12 @@ public:
 	
 	        // find the element in one
 	        // direction and update position
-	        if ((new_pos < n) && (stack[new_pos].id <= key_to_search))
+	        if ((new_pos < n) && (stack[new_pos].key <= key_to_search))
 	            pos = new_pos;
 	    }
 	
 	    // if element found return pos otherwise -1
-	    return ((stack[pos].id == key_to_search) ? pos : -1);
+	    return ((stack[pos].key == key_to_search) ? pos : -1);
 	}
     
 };
@@ -335,7 +335,7 @@ int main() {
             Product p;
             
 	            cout << "Enter id: ";        
-				cin >> p.id;        
+				cin >> p.key;        
             /*
             bool idExist;
             do {
@@ -372,7 +372,7 @@ int main() {
         	if (!st.empty()) {
 	            Product p = st.pop();
 				cout << "Removed Product\n"
-				     << "Product ID  : " << p.id << "\n"
+				     << "Product ID  : " << p.key << "\n"
 				     << "Name        : " << p.name << "\n"
 				     << "Category    : " << p.category << "\n"
 				     << "Size        : " << p.size << "\n"
@@ -440,7 +440,7 @@ int main() {
 		        getPrintHeader();
 		        
 	            cout << "| " << left
-	        	<< setw(10) << p.id << " | "
+	        	<< setw(10) << p.key << " | "
 	            << setw(20) << p.name << " | "
 	            << setw(15) << p.category << " | "
 	            << setw(6) << p.size << " | "
