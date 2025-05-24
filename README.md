@@ -29,32 +29,32 @@ Team A Implementation (LinkedQueue + Hash Table)
  - Load products from "products.txt"
 
  - Save sorted products to "TeamA_sorted_information.txt"
- - 
+   
 
 # Team B Implementation (Stack + Sorting/Searching)
 1. Product Management
 
-Add/remove products from stack
+ - Add/remove products from stack
 
-Display all products
+ - Display all products
 
-Sort products by various fields (ID, name, category, etc.)
+ - Sort products by various fields (ID, name, category, etc.)
 
-Search products by ID using Meta Binary Search
+ - Search products by ID using Meta Binary Search
 
 2. Data Structures
 
-Array-based stack implementation
+ - Array-based stack implementation
 
-Gnome Sort algorithm for sorting
+ - Gnome Sort algorithm for sorting
 
-Meta Binary Search for efficient searching
+ - Meta Binary Search for efficient searching
 
 3. File Operations
 
-Load products from "products.txt"
+ - Load products from "products.txt"
 
-Save sorted products to "TeamB_sorted_information.txt"
+ - Save sorted products to "TeamB_sorted_information.txt"
 
 ## Data Structure Details ##
 # Team A
@@ -125,15 +125,16 @@ Save sorted products to "TeamB_sorted_information.txt"
  - Save to file
 
 # File Formats
-Input File ("products.txt")
-ID,Name,Category,Size,Color,Price
-101,Swim Goggles,Accessories,Medium,Black,25.50
-102,Swim Cap,Accessories,One Size,Blue,15.00
-...
-Output Files
-TeamA_sorted_information.txt
+#### Input File ("products.txt")
+##### ID,Name,Category,Size,Color,Price
+##### 101,Swim Goggles,Accessories,Medium,Black,25.50
+##### 102,Swim Cap,Accessories,One Size,Blue,15.00
+##### ...
 
-TeamB_sorted_information.txt
+#### Output Files
+- TeamA_sorted_information.txt
+
+- TeamB_sorted_information.txt
 
 # Technical Details
  - Language: C++
@@ -156,14 +157,4 @@ The hash table provides O(1) average case time complexity for searches
 
 Meta Binary Search provides efficient O(log n) search time on sorted data
 
-# Future Enhancements
-Implement a unified interface for both teams
-
-Add data validation for user inputs
-
-Support for larger datasets
-
-Additional search criteria (name, category, etc.)
-
-Graphical user interface
 
