@@ -1,0 +1,21 @@
+23950186,swim goggles,eyewear,M,black,20
+61140943,kick board,training,L,blue,25
+21491092,swim cap,accessories,OS,silicone,10
+84736291,swim fins,training,XL,yellow,30
+50293847,pull buoy,training,M,red,15
+39485762,snorkel,equipment,S,transparent,18.5
+10293847,swim trunks,apparel,L,navy,22
+65748392,rash guard,apparel,M,black,28
+11223344,swim paddles,training,L,green,21.75
+33445566,mesh bag,accessories,OS,gray,12
+55667788,ear plugs,accessories,S,pink,5.5
+77889900,nose clip,accessories,OS,purple,4
+99001122,water bottle,accessories,M,blue,8
+12345678,swim socks,apparel,S,black,9.5
+87654321,lap counter,equipment,OS,white,14
+13579246,swim t-shirt,apparel,XL,red,19
+24681357,diving mask,eyewear,L,clear,32
+98765432,swim backpack,accessories,OS,black,35
+56781234,neoprene cap,accessories,M,blue,16
+43218765,swim jammer,apparel,L,black,27
+70475722,swim cap,accessroies,OS,blue,5.9
